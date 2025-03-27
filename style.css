@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card h1 {
+    color: #ff4a6e;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.card p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4a6e;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff799e;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff4a6e, 0 0 10px #ff4a6e;
+    }
+    100% {
+        text-shadow: 0 0 15px #ff4a6e, 0 0 20px #ff4a6e;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
